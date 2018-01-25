@@ -12,7 +12,7 @@
         <!--设置result的自动映射级别 NONE-禁止自动匹配、
         PARTIAL(默认)-自动匹配所有属性，内部嵌套除外
         FULL-自动匹配所有-->
-        <setting name="autoMappingBehavior" value="NONE"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
     </settings>
     <typeAliases>
         <!--通过指定包名设置别名，默认名称为JavaBean的非限定类名-->

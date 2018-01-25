@@ -121,4 +121,70 @@
         FROM smbms_user u,smbms_address a
         WHERE u.id=a.userId and u.id=#{id}
     </select>
+
+    <!--if元素实现简单的条件判断-->
+    <select id="getUserListTestIf" resultMap="userList" parameterType="User">
+--思考：如果只从一个表中查询（即没有u.userRole=r.id条件）会怎样，and要怎样处理
+        SELECT u.* , r.roleName  from smbms_user u,smbms_role r WHERE u.userRole=r.id
+        <if test="userRole != null">
+            AND u.userRole=#{userRole}
+        </if>
+        <if test="userName !=null and userName.trim() !=''">
+            and u.userName like concat('%',#{userName},'%')
+        </if>
+    </select>
+    <!--if元素单表条件判断-->
+    <select id="getUserListTestIfOne" parameterType="User" resultMap="userList">
+        SELECT * from smbms_user where 1=1
+        <if test="userName !=null and userName !=''">
+            and userName like concat('%',#{userName},'%')
+        </if>
+        <if test="userRole != null">
+            and userRole = #{userRole}
+        </if>
+    </select>
+    <!--where元素简化条件判断-->
+    <select id="getUserListTestWhere" resultType="User">
+        SELECT * from smbms_user
+        <where>
+            <if test="userName !=null and userName.trim() !=''">
+                and userName like concat('%',#{userName},'%')
+            </if>
+            <if test="userRole !=null">
+                and userRole=#{userRole}
+            </if>
+        </where>
+    </select>
+
+    <!--if+trim实现多条件查询-->
+    <select id="getUserListTestIfAndTrim" resultType="User">
+        SELECT * FROM smbms_user
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="userName !=null and userName.trim()!=''">
+                and userName like concat('%',#{userName},'%')
+            </if>
+            <if test="userRole !=null">
+                and userRole=#{userRole}
+            </if>
+        </trim>
+    </select>
+
+    <!--if+set改造更新操作-->
+    <update id="modifyTestIfAndSet" parameterType="User">
+        UPDATE smbms_user
+        <set>
+            <if test="userCode !=null">userCode=#{userCode},</if>
+            <if test="userName !=null">userName=#{userName},</if>
+            <if test="userPassword !=null">userPassword=#{userPassword},</if>
+            <if test="gender !=null">gender=#{gender},</if>
+            <if test="birthday !=null">birthday=#{birthday},</if>
+            <if test="phone !=null">phone=#{phone},</if>
+            <if test="address !=null">address=#{address},</if>
+            <if test="userRole !=null">userRole=#{userRole},</if>
+            <if test="modifyBy !=null">modifyBy=#{modifyBy},</if>
+            <if test="modifyDate !=null">modifyDate=#{modifyDate},</if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
 </mapper>

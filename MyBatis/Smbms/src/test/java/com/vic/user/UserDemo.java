@@ -108,19 +108,19 @@ public class UserDemo {
         }
     }
 
-//    @Test//测试resultType自动映射
-//    public void testGetUserListByResultType(){
-//        User user=new User();
-//        user.setUserName("孙");
-//        user.setUserRole(3);
-//        List<User> userList=mapper.getUserListByResultType(user);
-//        Iterator<User> iterator=userList.iterator();
-//        while(iterator.hasNext()){
-//            User aUser=iterator.next();
-//            logger.debug("UserName====>"+aUser.getUserName()+"\tID====>"+aUser.getId()+"\troleName====>"+aUser.getUserRoleName());
-//        }
-//    }
-    @Test//测试resultMap手动映射
+    /*@Test//测试resultType自动映射
+    public void testGetUserListByResultType(){
+        User user=new User();
+        user.setUserName("孙");
+        user.setUserRole(3);
+        List<User> userList=mapper.getUserListByResultType(user);
+        Iterator<User> iterator=userList.iterator();
+        while(iterator.hasNext()){
+            User aUser=iterator.next();
+            logger.debug("UserName====>"+aUser.getUserName()+"\tID====>"+aUser.getId()+"\troleName====>"+aUser.getUserRoleName());
+        }
+    }*/
+    /*@Test//测试resultMap手动映射
     public void testGetUserListByResultMap(){
         User user=new User();
         user.setUserName("邓");
@@ -131,7 +131,7 @@ public class UserDemo {
             User aUser=iterator.next();
             logger.debug(aUser);
         }
-    }
+    }*/
 
     @Test//测试添加用户
     public void testAdd(){
@@ -257,5 +257,78 @@ public class UserDemo {
             }
         }
 
+    }
+
+    @Test//测试if条件判断
+    public void testGetUserListTestIf(){
+        User user=new User();
+        //user.setUserRole(3);
+        user.setUserName("赵");
+        List<User> userList=mapper.getUserListTestIf(user);
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u.getUserName()+"\t"+u.getUserRoleName());
+        }
+
+    }
+
+    @Test//单表查询，if条件判断测试
+    public void testGetUserListTestIfOne(){
+        User user=new User();
+        //user.setUserRole(3);
+        user.setUserName("赵");
+        List<User> userList=mapper.getUserListTestIfOne(user);
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+
+    @Test//where简化条件怕判断
+    public void testGetUserListTestWhere(){
+        User user=new User();
+        //user.setUserRole(3);
+        //user.setUserName("赵");
+        List<User> userList=mapper.getUserListTestWhere(user);
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+
+    @Test//if+trim实现多条件判断
+    public void testGetUserListTestIfAndTrim(){
+        User user=new User();
+        user.setUserRole(3);
+        //user.setUserName("赵");
+        List<User> userList=mapper.getUserListTestIfAndTrim(user);
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+
+    @Test//if+set改造更新操作
+    public void testModifyTestIfAndSet(){
+        int count=0;
+        try {
+            User user=new User();
+            user.setUserPassword("7777777");
+            user.setModifyDate(new Date());
+            user.setId(15);
+            count=mapper.modifyTestIfAndSet(user);
+        } catch (Exception e) {
+            if (session!=null){
+                session.rollback();
+                count=0;
+            }
+            logger.error(e);
+        } finally {
+            logger.debug("修改用户记录数："+count);
+        }
     }
 }

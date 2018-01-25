@@ -64,9 +64,59 @@ public interface UserMapper {
      */
     int updatePwd(@Param("userPassword")String pwd,@Param("id")Integer id);
 
+    /**
+     * 根据用户id删除用户
+     * @param id
+     * @return
+     */
     int deleteUserById(Integer id);
 
+    /**
+     * 测试association的方法
+     * @param userRole
+     * @return
+     */
     List<User> getUserListByRoleId(Serializable userRole);
 
+    /**
+     * 测试collectiong的方法
+     * @param id
+     * @return
+     */
     List<User> getAddressListByUserId(Serializable id);
+
+    /**
+     * 测试if元素的条件判断
+     * @return
+     */
+    List<User> getUserListTestIf(User user);
+
+    /**
+     * if条件判断测试，单表查询，采用where 1=1
+     * @param user
+     * @return
+     */
+    List<User> getUserListTestIfOne(User user);
+
+    /**
+     * where简化条件判断
+     * @param user
+     * @return
+     */
+    List<User> getUserListTestWhere(User user);
+
+    /**
+     * if+tirm实现多条件查询
+     * @param user
+     * @return
+     */
+    List<User> getUserListTestIfAndTrim(User user);
+
+    /**
+     * if+set改造更新操作
+     * @param user
+     * @return
+     */
+    int modifyTestIfAndSet(User user);
+
 }
