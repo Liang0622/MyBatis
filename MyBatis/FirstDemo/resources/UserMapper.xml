@@ -26,9 +26,9 @@
      -->
     <insert id="addUserById" parameterType="User"  keyProperty="id" useGeneratedKeys="true">
         insert into user(userName,password) values(#{userName},#{password})
-        <!-- <selectKey resultType="int" keyProperty="id" order="AFTER">
+         <selectKey resultType="int" keyProperty="id" order="AFTER">
               select @@IDENTITY
-         </selectKey>-->
+         </selectKey>
     </insert>
 
 
@@ -62,4 +62,13 @@
         WHERE   userName like concat('%',#{zzz},'%')
     </select>
 
+    <!--resultMap 手动映射-->
+    <resultMap id="userMap" type="User">
+        <id property="id" column="id"/>
+        <result property="userName" column="uName"/>
+        <result property="password" column="pwd"/>
+    </resultMap>
+    <select id="getUserListByMap" resultMap="userMap" parameterType="int">
+        SELECT * from user where id =#{id}
+    </select>
 </mapper>

@@ -40,4 +40,6 @@ public interface UserMapper {
      * 根据名称进行模糊查询
      */
     List<User> selectByNamelike(String name);
+
+    User getUserListByMap(Serializable id);
 }

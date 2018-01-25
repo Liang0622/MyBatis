@@ -1,6 +1,7 @@
 package com.vic.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class User {
     private Integer id; //id
@@ -17,15 +18,34 @@ public class User {
     private Integer modifyBy;     //更新者
     private Date modifyDate;   //更新时间
 
-    private String userRoleName;//用户角色名称。用于resultType自动映射测试
+    private Role role;//角色属性，用于测试association
+    private List<Address> addressList;//用户地址列表，用于测试collection
 
-    public String getUserRoleName() {
-        return userRoleName;
+    public List<Address> getAddressList() {
+        return addressList;
     }
 
-    public void setUserRoleName(String userRoleName) {
-        this.userRoleName = userRoleName;
+    public void setAddressList(List<Address> addressList) {
+        this.addressList = addressList;
     }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    //    private String userRoleName;//用户角色名称。用于resultType自动映射测试
+
+//    public String getUserRoleName() {
+//        return userRoleName;
+//    }
+//
+//    public void setUserRoleName(String userRoleName) {
+//        this.userRoleName = userRoleName;
+//    }
 
     public Integer getId() {
         return id;
@@ -122,7 +142,6 @@ public class User {
                 ", creationDate=" + creationDate +
                 ", modifyBy=" + modifyBy +
                 ", modifyDate=" + modifyDate +
-                ", userRoleName='" + userRoleName + '\'' +
                 '}';
     }
 }

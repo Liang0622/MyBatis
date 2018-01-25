@@ -75,4 +75,50 @@
     <delete id="deleteUserById" parameterType="User">
         delete FROM  smbms_user where id=#{id}
     </delete>
+
+    <!--使用resultMap实现高级结果映射-->
+    <!--association     仅处理一对一的关联关系-->
+    <resultMap id="userRoleResult" type="User">
+        <id property="id" column="id"/>
+        <result property="userCode" column="userCode"/>
+        <result property="userName" column="userName"/>
+        <result property="userRole" column="userRole"/>
+        <!--内嵌对象，Role-->
+        <!--<association property="role" javaType="Role">-->
+            <!--<id property="id" column="r_id"/>-->
+            <!--<result property="roleCode" column="roleCode"/>-->
+            <!--<result property="roleName" column="roleName"/>-->
+        <!--</association>-->
+        <!--association的复用，根据id加载复用代码-->
+        <association property="role" javaType="Role" resultMap="roleResult"/>
+    </resultMap>
+    <select id="getUserListByRoleId" parameterType="Integer" resultMap="userRoleResult">
+        SELECT u.* ,r.id as r_id ,r.roleCode,r.roleName from smbms_user u,smbms_role r
+        WHERE u.userRole=r.id and u.userRole=#{userRole}
+    </select>
+    <!--resultMap封装association的代码-->
+    <resultMap id="roleResult" type="Role">
+        <id property="id" column="r_id"/>
+        <result property="roleCode" column="roleCode"/>
+        <result property="roleName" column="roleName"/>
+    </resultMap>
+
+    <!--collection 嵌套集合属性-->
+    <resultMap id="userAddressResult" type="User">
+        <id property="id" column="id"/>
+        <result property="userCode" column="userCode"/>
+        <result property="userName" column="userName"/>
+        <collection property="addressList" ofType="Address">
+            <id property="id" column="a_id"/>
+            <result property="postCode" column="postCode"/>
+            <result property="tel" column="tel"/>
+            <result property="contact" column="contact"/>
+            <result property="addressDesc" column="addressDesc"/>
+        </collection>
+    </resultMap>
+    <select id="getAddressListByUserId" resultMap="userAddressResult" parameterType="Integer">
+        SELECT u.* ,a.id ,a.contact,a.addressDesc,a.postCode,a.tel
+        FROM smbms_user u,smbms_address a
+        WHERE u.id=a.userId and u.id=#{id}
+    </select>
 </mapper>

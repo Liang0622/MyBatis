@@ -1,6 +1,7 @@
 package com.vic.user;
 
 import com.vic.dao.user.UserMapper;
+import com.vic.pojo.Address;
 import com.vic.pojo.User;
 import com.vic.util.SqlSessionFactorySingleUtil;
 import org.apache.ibatis.annotations.Param;
@@ -107,22 +108,22 @@ public class UserDemo {
         }
     }
 
-    @Test//测试resultType自动映射
-    public void testGetUserListByResultType(){
-        User user=new User();
-        user.setUserName("孙");
-        user.setUserRole(3);
-        List<User> userList=mapper.getUserListByResultType(user);
-        Iterator<User> iterator=userList.iterator();
-        while(iterator.hasNext()){
-            User aUser=iterator.next();
-            logger.debug("UserName====>"+aUser.getUserName()+"\tID====>"+aUser.getId()+"\troleName====>"+aUser.getUserRoleName());
-        }
-    }
+//    @Test//测试resultType自动映射
+//    public void testGetUserListByResultType(){
+//        User user=new User();
+//        user.setUserName("孙");
+//        user.setUserRole(3);
+//        List<User> userList=mapper.getUserListByResultType(user);
+//        Iterator<User> iterator=userList.iterator();
+//        while(iterator.hasNext()){
+//            User aUser=iterator.next();
+//            logger.debug("UserName====>"+aUser.getUserName()+"\tID====>"+aUser.getId()+"\troleName====>"+aUser.getUserRoleName());
+//        }
+//    }
     @Test//测试resultMap手动映射
     public void testGetUserListByResultMap(){
         User user=new User();
-        user.setUserName("孙");
+        user.setUserName("邓");
         user.setUserRole(3);
         List<User> userList=mapper.getUserListByResultMap(user);
         Iterator<User> iterator=userList.iterator();
@@ -221,5 +222,40 @@ public class UserDemo {
         } finally {
             logger.debug("删除用户count=====>"+count);
         }
+    }
+
+    @Test//测试association 内嵌一个对象
+    public void terstGetUserListByRoleId(){
+        List<User> userList=mapper.getUserListByRoleId(3);
+        Iterator<User> iterator=userList.iterator();
+        while(iterator.hasNext()){
+            User aUser=iterator.next();
+            logger.debug("userName===>"+aUser.getUserName()+"\tuserRoleName"+aUser.getRole().getRoleName()
+                    +"\tuserRoleCode"+aUser.getRole().getRoleCode());
+        }
+    }
+
+    @Test//测试collection
+    public void testGetAddressListByUserId(){
+        //遍历用户
+        List<User> userList=mapper.getAddressListByUserId(1);
+        Iterator<User> iterator=userList.iterator();
+        while(iterator.hasNext()){
+            User aUser=iterator.next();
+            logger.debug("userName===>"+aUser.getUserName()+"\n");
+            //遍历用户地址
+            List<Address> addressesList=aUser.getAddressList();
+            Iterator<Address> addressIterator=addressesList.iterator();
+            while(addressIterator.hasNext()){
+                Address address=addressIterator.next();
+                logger.debug("address===>id:"+address.getId()
+                        +",concat:"+address.getContact()
+                        +",addressDesc:"+address.getAddressDesc()
+                        +",tel:"+address.getTel()
+                        +",postCode:"+address.getPostCode());
+
+            }
+        }
+
     }
 }

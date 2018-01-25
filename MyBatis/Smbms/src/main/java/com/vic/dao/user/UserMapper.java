@@ -3,6 +3,7 @@ package com.vic.dao.user;
 import com.vic.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
@@ -57,11 +58,15 @@ public interface UserMapper {
 
     /**
      * 使用@Param注解实现多参数入参
-     * @param pwd 传入的密码，经过@param注解加工，对应上数据库表中的userPassWord
+     * @param pwd 传入的密码，经过@param注解加工，对应xml中#{}内的参数名
      * @param id
      * @return
      */
     int updatePwd(@Param("userPassword")String pwd,@Param("id")Integer id);
 
     int deleteUserById(Integer id);
+
+    List<User> getUserListByRoleId(Serializable userRole);
+
+    List<User> getAddressListByUserId(Serializable id);
 }

@@ -46,7 +46,7 @@ public class UserTest {
      */
     @Test
     public void addUserById(){
-        User user=new User("低调","admin");
+        User user=new User("G小调","admin");
         mapper.addUserById(user);
         //没有id是因为数据库中已经设置了 主键自增  我们能不能获取新增的id
         System.out.println(user.getId());
@@ -95,6 +95,12 @@ public class UserTest {
     @Test
     public void  selectLike(){
         List<User> user=  mapper.selectByNamelike("a");
+        System.out.println(user);
+    }
+
+    @Test
+    public void testGetUserListByMap(){
+        User user=mapper.getUserListByMap(19);
         System.out.println(user);
     }
 }

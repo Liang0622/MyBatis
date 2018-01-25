@@ -32,7 +32,7 @@ public class SqlSessionFactorySingleUtil {
         } catch (IOException e) {
             logger.error(e);
         }
-        return sqlSessionFactory.openSession(false);
+        return sqlSessionFactory.openSession(); //默认不提交autoCommit=false
     }
 
 
