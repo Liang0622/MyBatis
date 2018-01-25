@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>  <!--核心配置-->
+    <properties resource="jdbc.properties"/>  <!-- 配置连接数据库的四要素-->
+    <typeAliases>
+        <package name="com.vic.pojo"/> <!--这个包下面的所有实体类的别名是 简写的类名-->
+        <!--  com.xdf.bean.User     简写User  -->
+    </typeAliases>
+
+
+
+    <!--设置mybatis运行环境 default默认运行环境是environment节点中的id  -->
+    <environments default="mysql">
+        <environment id="mysql">
+            <!--设置事务管理   后续ssm整合就交给Spring去管理-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--配置数据源 POOLED：mybatis自带的数据源  JNDI:tomcat中的数据源-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>  <!--管理我们设置的映射文件-->
+        <mapper resource="UserMapper.xml"/>
+    </mappers>
+</configuration>

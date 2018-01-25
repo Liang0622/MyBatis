@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+    <!--引入jdbc配置文件-->
+    <properties resource="jdbc.properties"></properties>
+    <!--配置mybatis的log实现为LOG4J-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+        <!--设置result的自动映射级别 NONE-禁止自动匹配、
+        PARTIAL(默认)-自动匹配所有属性，内部嵌套除外
+        FULL-自动匹配所有-->
+        <setting name="autoMappingBehavior" value="NONE"/>
+    </settings>
+    <typeAliases>
+        <!--通过指定包名设置别名，默认名称为JavaBean的非限定类名-->
+        <package name="com.vic.pojo"/>
+    </typeAliases>
+    <environments default="mysql">
+        <environment id="mysql">
+            <!--配置事务管理，采用JDBC的事务管理-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--使用mybatis自带的数据源POOLED-->
+            <dataSource type="POOLED">
+                <!--映射jdbc中的数据库连接的四要素-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <!--name的值是固定的，value的${ }中放置的内容和jdbc中的key一致-->
+                <property name="username" value="${user}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com\vic\dao\user\UserMapper.xml"/>
+    </mappers>
+</configuration>

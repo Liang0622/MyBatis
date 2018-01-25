@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace必须为UserMapper接口类的真实路径-->
+<mapper namespace="com.vic.dao.user.UserMapper">
+    <!--子标签的id必须和UserMapper接口类中方法同名-->
+
+    <!--查询用户表中的记录数-->
+    <select id="count" resultType="int">
+        SELECT count(1) FROM smbms_user
+    </select>
+
+    <!--查询所有用户的详细记录-->
+    <select id="getUserList" resultType="com.vic.pojo.User">
+        SELECT * FROM smbms_user
+    </select>
+
+    <!--根据用户名称查询用户列表（模糊查询）-->
+    <!--resultType数据返回类型，parameterType参数类型-->
+    <select id="getUserListByUserName" resultType="User" parameterType="String">
+        SELECT * from smbms_user WHERE  userName like concat('%',#{userName},'%')
+    </select>
+
+    <!--多条件查询-->
+    <!--条件参数封装成User对象进行入参-->
+    <select id="getUserListByUser" resultType="User" parameterType="User">
+        SELECT  * from smbms_user WHERE userName like concat('%',#{userName},'%')
+        and userRole=#{userRole}
+    </select>
+    <!--条件参数封装成Map对象进行入参-->
+    <select id="getUserListByMap" resultType="User" parameterType="Map">
+        select * from smbms_user WHERE userName like concat('%',#{uName},'%')
+        and userRole=#{uRole}
+    </select>
+
+    <!--用户角色名称展现-->
+    <!--方案一：使用resultType自动映射。User类中增加userRoleName属性，用户表和角色表进行联表查询-->
+    <select id="getUserListByResultType" resultType="User" parameterType="User">
+        -- 给r.roleName取别名，对应User对象中新加的userRoleName属性
+        select u.* , r.roleName as userRoleName from smbms_user u ,smbms_role r WHERE u.userRole=r.id
+        and u.userName like concat('%',#{userName},'%') AND u.userRole =#{userRole}
+    </select>
+
+    <!--方案二：使用resultMap手动映射-->
+    <resultMap id="userList" type="User" >
+        <result property="id" column="id"/>
+        <result property="userName" column="userName"/>
+        <result property="userRoleName" column="roleName"/>
+    </resultMap>
+    <select id="getUserListByResultMap" resultMap="userList" parameterType="User">
+        SELECT u.* ,r.roleName FROM smbms_user u ,smbms_role r WHERE u.userRole=r.id
+        AND u.userRole= #{userRole} and u.userName like concat('%',#{userName},'%')
+    </select>
+
+    <!--增加用户-->
+    <insert id="add" parameterType="User">
+        INSERT into smbms_user(userCode,userName,userPassword,gender,birthday,phone,
+        address,userRole,createdBy,creationDate) VALUES (#{userCode},#{userName},#{userPassword},
+        #{gender},#{birthday},#{phone},#{address},#{userRole},#{createdBy},#{creationDate})
+    </insert>
+
+    <!--更改用户信息-->
+    <update id="modify" parameterType="User">
+        UPDATE smbms_user set userCode=#{userCode},userName=#{userName},userPassword=#{userPassword},
+        gender=#{gender},phone=#{phone},address=#{address},userRole=#{userRole},modifyBy=#{modifyBy},
+        modifyDate=#{modifyDate},birthday=#{birthday} where id=#{id}
+    </update>
+    <!--使用Param注解实现多参数入参-->
+    <update id="updatePwd">
+        UPDATE smbms_user set userPassword=#{userPassword} where id=#{id}
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUserById" parameterType="User">
+        delete FROM  smbms_user where id=#{id}
+    </delete>
+</mapper>

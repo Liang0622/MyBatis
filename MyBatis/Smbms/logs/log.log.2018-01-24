@@ -1,0 +1,604 @@
+2018-01-24 21:34:06  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 21:34:06  [ main:164 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 21:34:06  [ main:187 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 21:34:06  [ main:187 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 21:34:06  [ main:188 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 21:34:06  [ main:188 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 21:34:07  [ main:323 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 21:34:07  [ main:693 ] - [ DEBUG ]  Created connection 1585787493.
+2018-01-24 21:34:07  [ main:694 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e853265]
+2018-01-24 21:34:07  [ main:697 ] - [ DEBUG ]  ==>  Preparing: SELECT * FROM smbms_user 
+2018-01-24 21:34:07  [ main:743 ] - [ DEBUG ]  ==> Parameters: 
+2018-01-24 21:34:07  [ main:809 ] - [ DEBUG ]  <==      Total: 19
+2018-01-24 21:34:07  [ main:810 ] - [ DEBUG ]  UserName====>系统管理员	ID====>1
+2018-01-24 21:34:07  [ main:811 ] - [ DEBUG ]  UserName====>李明	ID====>2
+2018-01-24 21:34:07  [ main:811 ] - [ DEBUG ]  UserName====>韩路彪	ID====>5
+2018-01-24 21:34:07  [ main:811 ] - [ DEBUG ]  UserName====>张华	ID====>6
+2018-01-24 21:34:07  [ main:816 ] - [ DEBUG ]  UserName====>王洋	ID====>7
+2018-01-24 21:34:07  [ main:817 ] - [ DEBUG ]  UserName====>赵燕	ID====>8
+2018-01-24 21:34:07  [ main:817 ] - [ DEBUG ]  UserName====>孙磊	ID====>10
+2018-01-24 21:34:07  [ main:818 ] - [ DEBUG ]  UserName====>孙兴	ID====>11
+2018-01-24 21:34:07  [ main:818 ] - [ DEBUG ]  UserName====>张晨	ID====>12
+2018-01-24 21:34:07  [ main:818 ] - [ DEBUG ]  UserName====>邓超	ID====>13
+2018-01-24 21:34:07  [ main:819 ] - [ DEBUG ]  UserName====>杨过	ID====>14
+2018-01-24 21:34:07  [ main:819 ] - [ DEBUG ]  UserName====>赵敏	ID====>15
+2018-01-24 21:34:07  [ main:819 ] - [ DEBUG ]  UserName====>222	ID====>16
+2018-01-24 21:34:07  [ main:819 ] - [ DEBUG ]  UserName====>222	ID====>17
+2018-01-24 21:34:07  [ main:820 ] - [ DEBUG ]  UserName====>222	ID====>18
+2018-01-24 21:34:07  [ main:820 ] - [ DEBUG ]  UserName====>222	ID====>19
+2018-01-24 21:34:07  [ main:820 ] - [ DEBUG ]  UserName====>222	ID====>20
+2018-01-24 21:34:07  [ main:820 ] - [ DEBUG ]  UserName====>222	ID====>21
+2018-01-24 21:34:07  [ main:821 ] - [ DEBUG ]  UserName====>222	ID====>22
+2018-01-24 22:34:17  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 22:34:18  [ main:530 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 22:34:18  [ main:610 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:34:18  [ main:610 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:34:18  [ main:610 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:34:18  [ main:610 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:35:44  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 22:35:44  [ main:160 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 22:35:44  [ main:190 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:35:44  [ main:190 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:35:44  [ main:190 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:35:44  [ main:190 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:36:29  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 22:36:30  [ main:180 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 22:36:30  [ main:210 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:36:30  [ main:210 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:36:30  [ main:210 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:36:30  [ main:210 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:36:30  [ main:360 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 22:36:30  [ main:900 ] - [ DEBUG ]  Created connection 1585787493.
+2018-01-24 22:36:30  [ main:900 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e853265]
+2018-01-24 22:36:30  [ main:900 ] - [ DEBUG ]  ==>  Preparing: SELECT * FROM smbms_user 
+2018-01-24 22:36:30  [ main:1000 ] - [ DEBUG ]  ==> Parameters: 
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  <==      Total: 19
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  UserName====>系统管理员	ID====>1
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  UserName====>李明	ID====>2
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  UserName====>韩路彪	ID====>5
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  UserName====>张华	ID====>6
+2018-01-24 22:36:31  [ main:1330 ] - [ DEBUG ]  UserName====>王洋	ID====>7
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>赵燕	ID====>8
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>孙磊	ID====>10
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>孙兴	ID====>11
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>张晨	ID====>12
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>邓超	ID====>13
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>杨过	ID====>14
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>赵敏	ID====>15
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>16
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>17
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>18
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>19
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>20
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>21
+2018-01-24 22:36:31  [ main:1340 ] - [ DEBUG ]  UserName====>222	ID====>22
+2018-01-24 22:52:40  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 22:52:40  [ main:200 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 22:52:41  [ main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:52:41  [ main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:52:41  [ main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 22:52:41  [ main:230 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:09  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:04:09  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:04:09  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:04:09  [ main:150 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:04:09  [ main:150 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:04:09  [ main:150 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:04:09  [ main:150 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:09  [ main:150 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:09  [ main:660 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:04:09  [ main:670 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:09  [ main:670 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:04:09  [ main:670 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:04:09  [ main:670 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:04:09  [ main:670 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:04:09  [ main:710 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:04:10  [ main:740 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:10  [ main:740 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:10  [ main:740 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:10  [ main:740 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:10  [ main:980 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:04:10  [ main:1660 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:04:10  [ main:1660 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:04:10  [ main:1660 ] - [ DEBUG ]  ==>  Preparing: SELECT * FROM smbms_user 
+2018-01-24 23:04:11  [ main:1730 ] - [ DEBUG ]  ==> Parameters: 
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  <==      Total: 19
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>系统管理员	ID====>1
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>李明	ID====>2
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>韩路彪	ID====>5
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>张华	ID====>6
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>王洋	ID====>7
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>赵燕	ID====>8
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>孙磊	ID====>10
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>孙兴	ID====>11
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>张晨	ID====>12
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>邓超	ID====>13
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>杨过	ID====>14
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>赵敏	ID====>15
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>16
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>17
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>18
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>19
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>20
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>21
+2018-01-24 23:04:11  [ main:1800 ] - [ DEBUG ]  UserName====>222	ID====>22
+2018-01-24 23:04:21  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:04:21  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:04:21  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:04:21  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:04:21  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:04:21  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:04:21  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:21  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:04:21  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:04:21  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:04:21  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:21  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:21  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:21  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:04:21  [ main:430 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:04:22  [ main:790 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:04:22  [ main:790 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:04:22  [ main:800 ] - [ DEBUG ]  ==>  Preparing: SELECT * from smbms_user WHERE userName like concat('%',?,'%') 
+2018-01-24 23:04:22  [ main:850 ] - [ DEBUG ]  ==> Parameters: 孙(String)
+2018-01-24 23:04:22  [ main:900 ] - [ DEBUG ]  <==      Total: 2
+2018-01-24 23:04:22  [ main:900 ] - [ DEBUG ]  UserName====>孙磊	ID====>10
+2018-01-24 23:04:22  [ main:900 ] - [ DEBUG ]  UserName====>孙兴	ID====>11
+2018-01-24 23:33:55  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:33:55  [ main:120 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:33:55  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:33:55  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:33:55  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:33:55  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:33:55  [ main:210 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:33:55  [ main:220 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:33:55  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:33:55  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:33:55  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:33:55  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:33:55  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:33:55  [ main:440 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:33:55  [ main:810 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:33:55  [ main:820 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:33:55  [ main:820 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName ike concat('%',?,'%') and userRole=? 
+2018-01-24 23:33:56  [ main:860 ] - [ DEBUG ]  ==> Parameters: 李(String), 2(Integer)
+2018-01-24 23:39:23  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:39:23  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:39:23  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:39:23  [ main:150 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:39:23  [ main:150 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:39:23  [ main:150 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:39:23  [ main:150 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:39:23  [ main:150 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:39:23  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:39:23  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:39:23  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:39:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:39:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:39:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:39:23  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:39:24  [ main:780 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:39:24  [ main:780 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:39:24  [ main:780 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName ike concat('%',?,'%') and userRole=? 
+2018-01-24 23:39:24  [ main:820 ] - [ DEBUG ]  ==> Parameters: 李(String), 2(Integer)
+2018-01-24 23:40:13  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:13  [ main:130 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:13  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:40:13  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:13  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:40:13  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:40:13  [ main:220 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:40:13  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:40:13  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:40:13  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:13  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:13  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:13  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:14  [ main:420 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:40:14  [ main:790 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:40:14  [ main:790 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:40:14  [ main:790 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName ike concat('%',?,'%') and userRole=? 
+2018-01-24 23:40:14  [ main:850 ] - [ DEBUG ]  ==> Parameters: ss(String), 2(Integer)
+2018-01-24 23:40:56  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:56  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:56  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:40:56  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:40:56  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:40:56  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:40:56  [ main:220 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:40:56  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:40:56  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:40:56  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:56  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:56  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:56  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:40:56  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:40:57  [ main:810 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:40:57  [ main:810 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:40:57  [ main:820 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and userRole=? 
+2018-01-24 23:40:57  [ main:860 ] - [ DEBUG ]  ==> Parameters: 李(String), 2(Integer)
+2018-01-24 23:41:27  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:41:28  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:41:28  [ main:220 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:41:28  [ main:220 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:41:28  [ main:220 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:41:28  [ main:220 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:41:28  [ main:220 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:41:28  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:41:28  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:41:28  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:41:28  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:41:28  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:41:28  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:41:28  [ main:420 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:41:28  [ main:770 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:41:28  [ main:770 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:41:28  [ main:770 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and userRole=? 
+2018-01-24 23:41:28  [ main:830 ] - [ DEBUG ]  ==> Parameters: ss(String), 2(Integer)
+2018-01-24 23:42:31  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:42:32  [ main:130 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:42:32  [ main:220 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:42:32  [ main:220 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:42:32  [ main:220 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:42:32  [ main:220 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:42:32  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:42:32  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:42:32  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:42:32  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:42:32  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:42:32  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:42:32  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:42:32  [ main:420 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:42:32  [ main:780 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:42:32  [ main:780 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:42:32  [ main:790 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') -- and userRole=? 
+2018-01-24 23:43:23  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:43:24  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:43:24  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:43:24  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:43:24  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:43:24  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:43:24  [ main:220 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:43:24  [ main:220 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:43:24  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:43:24  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:43:24  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:43:24  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:43:24  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:43:24  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:43:24  [ main:770 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:43:24  [ main:770 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:43:24  [ main:780 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') -- and userRole=? 
+2018-01-24 23:44:36  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:44:36  [ main:160 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:44:36  [ main:240 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:44:37  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:44:37  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:44:37  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:44:37  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:44:37  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:44:37  [ main:450 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:44:37  [ main:820 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:44:37  [ main:820 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:44:37  [ main:830 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and userRole=? 
+2018-01-24 23:44:37  [ main:910 ] - [ DEBUG ]  ==> Parameters: ss(String), null
+2018-01-24 23:47:01  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:47:01  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:47:01  [ main:240 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:47:01  [ main:240 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:47:01  [ main:240 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:47:01  [ main:240 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:47:01  [ main:260 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:47:01  [ main:260 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:47:01  [ main:290 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:47:01  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:47:01  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:47:01  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:47:01  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:47:01  [ main:460 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:47:02  [ main:830 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:47:02  [ main:830 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:47:02  [ main:840 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and userRole=? 
+2018-01-24 23:47:02  [ main:890 ] - [ DEBUG ]  ==> Parameters: 赵(String), 3(Integer)
+2018-01-24 23:48:58  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:48:58  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:48:58  [ main:240 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:48:58  [ main:240 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:48:58  [ main:240 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:48:58  [ main:240 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:48:58  [ main:250 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:48:58  [ main:250 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:48:58  [ main:280 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:48:58  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:48:58  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:48:58  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:48:58  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:48:58  [ main:440 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:48:59  [ main:830 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:48:59  [ main:830 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:48:59  [ main:840 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and gender=? 
+2018-01-24 23:48:59  [ main:880 ] - [ DEBUG ]  ==> Parameters: 赵(String), 1(Integer)
+2018-01-24 23:49:42  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:49:42  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:49:42  [ main:210 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:49:42  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:49:42  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:49:42  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:49:42  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:49:42  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:49:42  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:49:43  [ main:770 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:49:43  [ main:770 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:49:43  [ main:770 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userName like concat('%',?,'%') and gender=? 
+2018-01-24 23:49:43  [ main:820 ] - [ DEBUG ]  ==> Parameters: 赵(String), 1(Integer)
+2018-01-24 23:50:50  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:50:50  [ main:130 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:50:50  [ main:200 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:50:50  [ main:240 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:50:50  [ main:260 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:50:50  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:50:50  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:50:50  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:50:50  [ main:400 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:50:50  [ main:750 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:50:50  [ main:750 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:50:50  [ main:760 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') and gender=? 
+2018-01-24 23:50:50  [ main:810 ] - [ DEBUG ]  ==> Parameters: w(String), 1(Integer)
+2018-01-24 23:51:23  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:51:23  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:51:23  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:51:23  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:51:23  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:51:23  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:51:23  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:51:23  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:51:23  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:51:23  [ main:220 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:51:23  [ main:220 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:51:23  [ main:220 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:51:23  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:51:23  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:51:23  [ main:260 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:51:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:51:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:51:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:51:23  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:51:23  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:51:24  [ main:780 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:51:24  [ main:780 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:51:24  [ main:790 ] - [ DEBUG ]  ==>  Preparing: SELECT * from smbms_user WHERE userName like concat('%',?,'%') 
+2018-01-24 23:51:24  [ main:840 ] - [ DEBUG ]  ==> Parameters: 孙(String)
+2018-01-24 23:51:24  [ main:900 ] - [ DEBUG ]  <==      Total: 2
+2018-01-24 23:51:24  [ main:900 ] - [ DEBUG ]  UserName====>孙磊	ID====>10
+2018-01-24 23:51:24  [ main:900 ] - [ DEBUG ]  UserName====>孙兴	ID====>11
+2018-01-24 23:53:31  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:53:31  [ main:130 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:53:31  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:53:31  [ main:210 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:53:31  [ main:250 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:53:31  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:53:31  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:53:31  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:53:31  [ main:280 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:53:31  [ main:410 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:53:32  [ main:760 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:53:32  [ main:760 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:53:32  [ main:760 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') and gender=? 
+2018-01-24 23:53:32  [ main:810 ] - [ DEBUG ]  ==> Parameters: w(String), 1(Integer)
+2018-01-24 23:54:33  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:54:33  [ main:160 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:54:33  [ main:230 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:54:33  [ main:230 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:54:33  [ main:230 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:54:33  [ main:230 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:54:33  [ main:240 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:54:33  [ main:240 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:54:33  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:54:33  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:54:33  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:54:33  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:54:33  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:54:34  [ main:460 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:54:34  [ main:830 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:54:34  [ main:830 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:54:34  [ main:840 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') -- and gender=? 
+2018-01-24 23:55:34  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:55:34  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:55:34  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:55:34  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:55:34  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:55:34  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:55:34  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:55:34  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:55:34  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:55:34  [ main:440 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:55:35  [ main:800 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:55:35  [ main:800 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:55:35  [ main:810 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') -- and gender=? 
+2018-01-24 23:56:16  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:56:16  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:56:16  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:56:16  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:56:16  [ main:150 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:56:16  [ main:150 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:56:16  [ main:150 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:16  [ main:150 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:16  [ main:220 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:56:16  [ main:220 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:16  [ main:220 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:56:16  [ main:220 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:56:16  [ main:230 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:56:16  [ main:230 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:56:16  [ main:270 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:56:16  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:16  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:16  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:16  [ main:290 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:16  [ main:430 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:56:17  [ main:820 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:56:17  [ main:820 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:56:17  [ main:820 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') -- and gender=? 
+2018-01-24 23:56:51  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:56:51  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:56:51  [ main:130 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:56:51  [ main:130 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:56:51  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:56:51  [ main:140 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:56:51  [ main:140 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:51  [ main:140 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:51  [ main:200 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:56:51  [ main:200 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:56:51  [ main:200 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:56:51  [ main:210 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:56:51  [ main:210 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:56:51  [ main:210 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:56:51  [ main:240 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:56:51  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:51  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:51  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:51  [ main:270 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:56:51  [ main:420 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:56:51  [ main:770 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:56:51  [ main:780 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:56:51  [ main:780 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') -- and gender=? 
+2018-01-24 23:57:51  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-24 23:57:51  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VFS
+2018-01-24 23:57:51  [ main:140 ] - [ DEBUG ]  JBoss 6 VFS API is not available in this environment.
+2018-01-24 23:57:51  [ main:140 ] - [ DEBUG ]  Class not found: org.jboss.vfs.VirtualFile
+2018-01-24 23:57:51  [ main:140 ] - [ DEBUG ]  VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2018-01-24 23:57:51  [ main:150 ] - [ DEBUG ]  Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2018-01-24 23:57:51  [ main:150 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:57:51  [ main:150 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Reader entry: User.class
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Listing file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Find JAR URL: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Not a JAR: file:/F:/FrameWorkspaces/IDEA/MyBatis/Smbms/target/classes/com/vic/pojo/User.class
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Reader entry: ����   1 Z
+2018-01-24 23:57:51  [ main:240 ] - [ DEBUG ]  Checking to see if class com.vic.pojo.User matches criteria [is assignable to Object]
+2018-01-24 23:57:51  [ main:280 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2018-01-24 23:57:51  [ main:300 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:57:51  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:57:51  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:57:51  [ main:310 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-01-24 23:57:51  [ main:440 ] - [ DEBUG ]  Opening JDBC Connection
+2018-01-24 23:57:52  [ main:860 ] - [ DEBUG ]  Created connection 665188480.
+2018-01-24 23:57:52  [ main:860 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27a5f880]
+2018-01-24 23:57:52  [ main:860 ] - [ DEBUG ]  ==>  Preparing: SELECT * from WHERE userCode like concat('%',?,'%') 
+2018-01-24 23:57:52  [ main:900 ] - [ DEBUG ]  ==> Parameters: 赵(String)

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace务必和接口的全类名一致 -->
+<mapper namespace="com.vic.dao.UserMapper">
+    <!--id务必和接口中的方法名称对应
+   如果参数类型是一个对象，那么sql语句中#｛对象的属性名｝
+   -->
+
+    <insert id="addUser" parameterType="User">
+        insert into user(userName,password)
+        values(#{userName},#{password})
+    </insert>
+
+    <!--新增用户的同时 拿到数据库中的id
+     01.完成新增操作之后并没有把连接还给连接池
+     02.而是接着使用连接去查询id
+     SELECT @@IDENTITY
+     SELECT LAST_INSERT_ID()   都可以获取刚刚插入数据的主键
+
+      mysql中使用 order="AFTER"， 主键自增，必须是插入数据成功之后才能获取id
+      oracle中使用 order="BEFORE" ,必须先从序列中获取id，才能新增！
+
+      useGeneratedKeys:  mybatis会根据数据库的不同获取主键===》 主键回填
+     -->
+    <insert id="addUserById" parameterType="User"  keyProperty="id" useGeneratedKeys="true">
+        insert into user(userName,password) values(#{userName},#{password})
+        <!-- <selectKey resultType="int" keyProperty="id" order="AFTER">
+              select @@IDENTITY
+         </selectKey>-->
+    </insert>
+
+
+    <!--删除功能  用户传递的是 一个变量！ 这时候sql语句中的#{xxx}
+      xxx只是一个占位符
+      只有一个参数的时候，可以省略parameterType-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id=#{xxx}
+    </delete>
+
+    <!--修改 用户传递的是 一个对象！这时候sql语句中的#{属性值}
+      属性值必须和实体类中的属性一致 -->
+    <update id="updateUser" parameterType="User">
+        update   user  set  userName=#{userName},password=#{password}
+        where id=#{id}
+    </update>
+
+    <!--查询指定的user对象-->
+    <select id="selectUserById" parameterType="int" resultType="User">
+        SELECT  id,userName,password  from user  where id=#{yyy}
+    </select>
+
+    <!--查询所有的用户信息-->
+    <select id="selectAllUsers" resultType="User">
+        SELECT  id,userName,password  from user
+    </select>
+
+    <!--根据名称进行模糊查询-->
+    <select id="selectByNamelike"  resultType="User">
+        SELECT  id,userName,password  from user
+        WHERE   userName like concat('%',#{zzz},'%')
+    </select>
+
+</mapper>
