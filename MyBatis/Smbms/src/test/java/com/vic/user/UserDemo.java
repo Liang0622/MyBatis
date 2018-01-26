@@ -312,7 +312,7 @@ public class UserDemo {
         }
     }
 
-    @Test//if+set改造更新操作
+    @Test//if+set改造修改操作
     public void testModifyTestIfAndSet(){
         int count=0;
         try {
@@ -329,6 +329,126 @@ public class UserDemo {
             logger.error(e);
         } finally {
             logger.debug("修改用户记录数："+count);
+        }
+    }
+    @Test//if+set改造修改操作
+    public void testModifyTestIfAndTrim(){
+        int count=0;
+        try {
+            User user=new User();
+            user.setUserPassword("7777777");
+            user.setModifyDate(new Date());
+            user.setId(2);
+            count=mapper.modifyTestIfAndTrim(user);
+        } catch (Exception e) {
+            if (session!=null){
+                session.rollback();
+                count=0;
+            }
+            logger.error(e);
+        } finally {
+            logger.debug("修改用户记录数："+count);
+        }
+    }
+
+    @Test//foreach迭代测试,数组入参
+    public void testGetUserListByRoleId_foreach_array(){
+        List<User> userList= null;
+        try {
+            Integer[] roleIds=new Integer[]{1,2};
+            userList = mapper.getUserListByRoleId_foreach_array(roleIds);
+        } catch (Exception e) {
+            if(session!=null){
+                session.rollback();
+            }
+        }
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+    @Test//foreach迭代测试，List入参
+    public void testGetUserListByRoleId_foreach_list(){
+        List<Integer> roleList=new ArrayList<Integer>();
+        roleList.add(1);
+        roleList.add(2);
+        List<User> userList=mapper.getUserListByRoleId_foreach_list(roleList);
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+    @Test//foreach迭代测试，Map入参
+    public void testGetUserListByConditionMap_foreach_map(){
+        List<User> userList= null;
+        try {
+            Map<String,Object> conditionMap=new HashMap<String, Object>();
+            List<Integer> roleList=new ArrayList<Integer>();
+            roleList.add(1);
+            roleList.add(2);
+            conditionMap.put("gender",1);
+            conditionMap.put("roleIds",roleList);
+            userList = mapper.getUserListByConditionMap_foreach_map(conditionMap);
+        } catch (Exception e) {
+            if(session!=null){
+                session.rollback();
+            }
+            logger.error(e);
+        }
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+
+    @Test//测试choose元素
+    public void testGetUserList_choose(){
+        String userName="赵";
+        String userCode="";
+        Integer userRole=2;
+        List<User> userList=null;
+        try {
+            Date creationDate=new SimpleDateFormat("yyyy-MM-dd").parse("2016-01-01");
+            userList=mapper.getUserList_choose(userName,userCode,userRole,creationDate);
+        } catch (ParseException e) {
+            if(session!=null)
+                session.rollback();
+            e.printStackTrace();
+        }
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug(u);
+        }
+    }
+
+    @Test
+    public void testGetUserListByPage(){
+        String userName="";
+        Integer roleId=null;
+        Integer pageSize=5;
+        Integer currentPage=0;
+        List<User> userList= null;
+        try {
+            userList = mapper.getUserListByPage(userName,roleId,currentPage,pageSize);
+        } catch (Exception e) {
+            if(session!=null)
+                session.rollback();
+            logger.error(e);
+        }
+        Iterator<User> userIterator=userList.iterator();
+        while(userIterator.hasNext()){
+            User u=userIterator.next();
+            logger.debug("分页展示======》id:"+u.getId()+
+            "and userCode"+u.getUserCode()+
+            "and userName"+u.getUserName()+
+            "and userRoleName"+u.getUserRoleName()+
+            "and phone"+u.getPhone()+
+            "and gender"+u.getGender()+
+            "and creationDate"+u.getCreationDate());
         }
     }
 }

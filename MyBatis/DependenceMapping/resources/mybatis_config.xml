@@ -4,12 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>  <!--核心配置-->
     <properties resource="jdbc.properties"/>  <!-- 配置连接数据库的四要素-->
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/><!--开启懒加载-->
+        <setting name="aggressiveLazyLoading" value="false"/><!--按需加载-->
+        <setting name="autoMappingBehavior" value="FULL"/><!--自动匹配所有-->
+    </settings>
     <typeAliases>
         <package name="com.vic.pojo"/> <!--这个包下面的所有实体类的别名是 简写的类名-->
-        <!--  com.vic.pojo.User     简写User  -->
+        <!--  com.vic.pojo.Country    简写Country -->
     </typeAliases>
-
-
 
     <!--设置mybatis运行环境 default默认运行环境是environment节点中的id  -->
     <environments default="mysql">
@@ -27,6 +30,7 @@
     </environments>
 
     <mappers>  <!--管理我们设置的映射文件-->
-        <mapper resource="com\vic\dao\UserMapper.xml"/>
+        <mapper resource="com\vic\dao\CountryMapper.xml"/>
+        <mapper resource="com\vic\dao\ProvincialMapper.xml"/>
     </mappers>
 </configuration>

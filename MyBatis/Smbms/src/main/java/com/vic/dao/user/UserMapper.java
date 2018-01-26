@@ -4,6 +4,7 @@ import com.vic.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -113,10 +114,65 @@ public interface UserMapper {
     List<User> getUserListTestIfAndTrim(User user);
 
     /**
-     * if+set改造更新操作
+     * if+set改造修改操作
      * @param user
      * @return
      */
     int modifyTestIfAndSet(User user);
+
+    /**
+     * if+trim改造修改操作
+     * @param user
+     * @return
+     */
+    int modifyTestIfAndTrim(User user);
+
+    /**
+     * foreach迭代，入参为数组
+     * @param roleIds
+     * @return
+     */
+    List<User> getUserListByRoleId_foreach_array(Integer[] roleIds);
+
+    /**
+     *  foreach迭代，入参为List
+     * @param roleList
+     * @return
+     */
+    List<User> getUserListByRoleId_foreach_list(List<Integer> roleList);
+
+    /**
+     * foreach迭代，入参为Map
+     * @param conditionMap
+     * @return
+     */
+    List<User> getUserListByConditionMap_foreach_map(Map<String,Object> conditionMap);
+
+    /**
+     * choose元素测试方法
+     * @param userName
+     * @param userCode
+     * @param userRole
+     * @param creationDate
+     * @return
+     */
+    List<User> getUserList_choose(@Param("userName")String userName,
+                                  @Param("userCode")String userCode,
+                                  @Param("userRole")Integer userRole,
+                                  @Param("creationDate")Date creationDate);
+
+
+    /**
+     * MyBatis分页
+     * @param userName
+     * @param userRole
+     * @param currentPageNo 当前页码
+     * @param pageSize  页面容量
+     * @return
+     */
+    List<User> getUserListByPage(@Param("userName")String userName,
+                                 @Param("userRole")Integer userRole,
+                                 @Param("from")Integer currentPageNo,
+                                 @Param("pageSize")Integer pageSize);
 
 }

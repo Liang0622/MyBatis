@@ -169,7 +169,7 @@
         </trim>
     </select>
 
-    <!--if+set改造更新操作-->
+    <!--if+set改造修改操作-->
     <update id="modifyTestIfAndSet" parameterType="User">
         UPDATE smbms_user
         <set>
@@ -186,5 +186,84 @@
         </set>
         WHERE id=#{id}
     </update>
+
+    <!--if+trim该造修改操作-->
+    <update id="modifyTestIfAndTrim" parameterType="User">
+        update smbms_user
+        <trim prefix="set" suffixOverrides="," suffix="where id =#{id}">
+            <if test="userCode !=null">userCode=#{userCode},</if>
+            <if test="userName !=null">userName=#{userName},</if>
+            <if test="userPassword !=null">userPassword=#{userPassword},</if>
+            <if test="gender !=null">gender=#{gender},</if>
+            <if test="birthday !=null">birthday=#{birthday},</if>
+            <if test="phone !=null">phone=#{phone},</if>
+            <if test="address !=null">address=#{address},</if>
+            <if test="userRole !=null">userRole=#{userRole},</if>
+            <if test="modifyBy !=null">modifyBy=#{modifyBy},</if>
+            <if test="modifyDate !=null">modifyDate=#{modifyDate},</if>
+        </trim>
+    </update>
+
+    <!--foreach完成复杂查询-->
+    <!--入参为数组，collocation="array"-->
+    <select id="getUserListByRoleId_foreach_array" resultMap="userMapByRole">
+        SELECT * FROM smbms_user where userRole IN
+--         入参为数组，底层将collection的值写死为array
+        <foreach collection="array" item="roleIds" open="(" separator="," close=")">
+            #{roleIds}
+        </foreach>
+    </select>
+    <resultMap id="userMapByRole" type="User">
+        <id property="id" column="id"/>
+        <result property="userCode" column="userCode"/>
+        <result property="userName" column="userName"/>
+    </resultMap>
+
+    <!--入参为List,collection="list"-->
+    <select id="getUserListByRoleId_foreach_list" resultMap="userMapByRole">
+        SELECT * from smbms_user WHERE userRole IN
+        <foreach collection="list" item="roleList" open="(" separator="," close=")">
+            #{roleList}
+        </foreach>
+    </select>
+
+    <!--入参为Map，collection对应Map的key值-->
+    <select id="getUserListByConditionMap_foreach_map" resultMap="userMapByRole">
+        SELECT * FROM smbms_user WHERE gender=#{gender} and userRole IN
+        <foreach collection="roleIds" item="roleMap" open="(" separator="," close=")">
+            #{roleMap}
+        </foreach>
+    </select>
+
+    <!--choose元素，(when、otherwise)只有一个条件会输出，满足条件的第一个-->
+    <select id="getUserList_choose" resultType="User">
+        SELECT * FROM smbms_user WHERE 1=1
+        <choose>
+            <when test="userName !=null and userName.trim() !=''">
+                and userName like concat('%',#{userName},'%')
+            </when>
+            <when test="userCode !=null and userCode.trim() !=''">
+                and userCode like concat('%',#{userCode},'%')
+            </when>
+            <when test="userRole !=null">
+                and userRole =#{userRole}
+            </when>
+            <otherwise>
+                and YEAR (creationDate)=YEAR (#{creationDate})
+            </otherwise>
+        </choose>
+    </select>
+
+    <!--MyBatis分页-->
+    <select id="getUserListByPage" resultMap="userList">
+        SELECT u.*,r.roleName from smbms_user u,smbms_role r WHERE u.userRole=r.id
+        <if test="userRole !=null">
+            and u.userRole =#{userRole}
+        </if>
+        <if test="userName!=null and userName.trim() !=''">
+            and u.userName like concat('%',#{userName},"%")
+        </if>
+        order by creationDate desc limit #{from},#{pageSize}
+    </select>
 
 </mapper>

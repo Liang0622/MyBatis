@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vic.dao.teacher.TeacherMapper">
+    <!--    自链接一对多  -->
+    <!--1、根据导师编号，查询出所有老师的信息-->
+    <select id="selectTeachersByTid" resultMap="teacherMap">
+        SELECT id,`name` FROM teacher WHERE tid=#{xxx}
+    </select>
+    <resultMap id="teacherMap" type="Teacher">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--s设置集合属性，我们不断吧查询出来的id当成tid再次查询，知道没有结果-->
+        <collection property="teachers" ofType="Teacher" select="selectTeachersByTid" column="id"/>
+    </resultMap>
+
+    <!--2、根据老师的编号，查询自身信息和所有的导师信息-->
+    <select id="selectByTeacherId" resultMap="teacherIdMap">
+        SELECT id ,`name`,tid from teacher WHERE id=#{xxx}
+    </select>
+    <resultMap id="teacherIdMap" type="Teacher">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="teachers" ofType="Teacher" select="selectByTeacherId" column="tid"/>
+    </resultMap>
+
+    <!--    自链接查询多对一    -->
+    <select id="selectByTeacherId_association" resultMap="teacherMap_association">
+        SELECT id,name,tid FROM teacher WHERE id=#{xxx}
+    </select>
+    <resultMap id="teacherMap_association" type="Teacher">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--设置域属性-->
+        <association property="teacher" javaType="Teacher"
+                     select="selectByTeacherId_association" column="tid"/>
+    </resultMap>
+
+</mapper>

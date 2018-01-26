@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DependenceMapping/DependenceMapping.iml" filepath="$PROJECT_DIR$/DependenceMapping/DependenceMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/FirstDemo/FirstDemo.iml" filepath="$PROJECT_DIR$/FirstDemo/FirstDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManyToMany/ManyToMany.iml" filepath="$PROJECT_DIR$/ManyToMany/ManyToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Self_Join/Self_Join.iml" filepath="$PROJECT_DIR$/Self_Join/Self_Join.iml" />
       <module fileurl="file://$PROJECT_DIR$/Smbms/Smbms.iml" filepath="$PROJECT_DIR$/Smbms/Smbms.iml" />
     </modules>
   </component>

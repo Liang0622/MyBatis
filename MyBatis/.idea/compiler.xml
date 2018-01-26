@@ -6,13 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DependenceMapping" />
         <module name="FirstDemo" />
+        <module name="ManyToMany" />
+        <module name="Self_Join" />
         <module name="Smbms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DependenceMapping" target="1.5" />
       <module name="FirstDemo" target="1.5" />
+      <module name="ManyToMany" target="1.5" />
       <module name="MyBatis" target="1.5" />
+      <module name="Self_Join" target="1.5" />
       <module name="Smbms" target="1.5" />
     </bytecodeTargetLevel>
   </component>

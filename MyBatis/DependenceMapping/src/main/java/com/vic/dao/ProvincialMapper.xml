@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace务必和接口的全类名一致 -->
+<mapper namespace="com.vic.dao.ProvincialMapper">
+    <!--id务必和接口中的方法名称对应
+   如果参数类型是一个对象，那么sql语句中#｛对象的属性名｝
+   -->
+    <!--省会结果的手动映射-->
+    <resultMap id="provincialResult" type="Provincial">
+        <id property="pId" column="pid"/>
+        <result property="pName" column="pname"/>
+    </resultMap>
+    <select id="selectProvincialByCid" resultMap="provincialResult">
+        -- 只查询国家对应的省会信息
+        SELECT pid,pname FROM provincial
+        WHERE countryid=#{xxx}
+    </select>
+
+</mapper>

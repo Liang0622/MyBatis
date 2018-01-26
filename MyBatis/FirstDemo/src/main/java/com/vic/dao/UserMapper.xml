@@ -62,7 +62,12 @@
         WHERE   userName like concat('%',#{zzz},'%')
     </select>
 
-    <!--resultMap 手动映射-->
+    <!--六、属性名和字段名不一致-->
+    <!--使用别名-->
+    <select id="getAllUsers" resultType="User">
+        SELECT id,`uName` as userName ,pwd as password from `user`
+    </select>
+    <!--resultMap 手动映射，解决字段名和属性名不一致-->
     <resultMap id="userMap" type="User">
         <id property="id" column="id"/>
         <result property="userName" column="uName"/>
@@ -71,4 +76,43 @@
     <select id="getUserListByMap" resultMap="userMap" parameterType="int">
         SELECT * from user where id =#{id}
     </select>
+
+    <!--多条件查询的问题-->
+    <!--使用对象-->
+    <select id="findUserByParams1" resultMap="userMap">
+        SELECT id,uName,pwd FROM `user` WHERE
+        uName like '%' #{userName} '%' and id > #{id}
+    </select>
+    <!--使用Map-->
+    <select id="findUserByParams2" resultMap="userMap">
+        SELECT id,uName,pwd FROM `user` WHERE
+        uName like '%' #{key1} '%' and id > #{key2}
+    </select>
+    <!--使用索引-->
+    <select id="findUserByParams3" resultMap="userMap">
+        SELECT id,uName,pwd from `user`
+        WHERE uName like '%' #{0} '%'
+        and id>#{1}
+    </select>
+    <!--使用注解-->
+    <select id="findUserByParams4" resultMap="userMap">
+        SELECT id,uName,pwd from `user`
+        WHERE uName like '%' #{a} '%'
+        and id>#{b}
+    </select>
+
+    <!--八、#{} 中可以存放什么内容-->
+    <!--1、只有一个单独的参数时候，#｛占位符｝-->
+    <!--2、参数是一个对象的时候，#{必须是对象的属性名}-->
+    <!--3、有多个参数的时候，#{必须是参数对应的下标}   从0开始     也可以使用@Param注解-->
+    <!--4、参数是map集合的时候，传递的单独值，#{必须是map中的key}-->
+    <!--5、参数是map集合的时候，传递的对象，#{必须是map中的key.属性名}-->
+    <select id="findUsers_Map_User" resultMap="userMap">
+        SELECT id,uName,pwd from `user`
+        WHERE uName like '%' #{mapKey.userName} '%'
+        and id>#{mapKey.id}
+    </select>
+
+
+
 </mapper>

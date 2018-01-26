@@ -1,9 +1,11 @@
 package com.vic.dao;
 
 import com.vic.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
     /**
@@ -41,5 +43,46 @@ public interface UserMapper {
      */
     List<User> selectByNamelike(String name);
 
+    /**
+     * 使用别名，解决字段名和对象属性不一致
+     * @return
+     */
+    List<User> getAllUsers();
+
+    /**
+     * resultMap 手动映射，解决属性名和字段名不一致
+     * @param id
+     * @return
+     */
     User getUserListByMap(Serializable id);
+
+    /**
+     * 使用User对象实现多条件查询
+     * @param user
+     * @return
+     */
+    List<User> findUserByParams1(User user);
+    /**
+     * 使用Map实现多条件查询
+     * @param conditionMap
+     * @return
+     */
+    List<User> findUserByParams2(Map<String,Object> conditionMap);
+    /**
+     * 使用索引实现多条件查询
+     * @param name
+     * @param id
+     * @return
+     */
+    List<User> findUserByParams3(String name,Integer id);/**
+     * 使用索引实现多条件查询
+     * @param name
+     * @param id
+     * @return
+     */
+    List<User> findUserByParams4(@Param("a") String name, @Param("b") Integer id);
+
+    List<User> findUsers_Map_User(Map<String,User> conditionMap);
+
+
 }

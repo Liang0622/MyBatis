@@ -11,6 +11,9 @@
     <modules>
         <module>FirstDemo</module>
         <module>Smbms</module>
+        <module>DependenceMapping</module>
+        <module>Self_Join</module>
+        <module>ManyToMany</module>
     </modules>
 
     <dependencies>
