@@ -8,7 +8,7 @@ import java.util.Set;
 public class Country {
     private Integer cId;//国家编号
     private String cName;//国家名称
-    private Set<Provincial> provincials;
+    //private Set<Provincial> provincials;
 
     public Integer getcId() {
         return cId;
@@ -26,13 +26,13 @@ public class Country {
         this.cName = cName;
     }
 
-    public Set<Provincial> getProvincials() {
+   /* public Set<Provincial> getProvincials() {
         return provincials;
     }
 
     public void setProvincials(Set<Provincial> provincials) {
         this.provincials = provincials;
-    }
+    }*/
 
     /**
      * 无参构造
@@ -44,11 +44,10 @@ public class Country {
      * 构造函数
      * @param cId
      * @param cName
-     * @param provincials
      */
-    public Country(Integer cId, String cName, Set<Provincial> provincials) {
+    public Country(Integer cId, String cName/*, Set<Provincial> provincials*/) {
         this.cId = cId;
         this.cName = cName;
-        this.provincials = provincials;
+        //this.provincials = provincials;
     }
 }

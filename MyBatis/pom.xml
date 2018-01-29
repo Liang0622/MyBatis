@@ -14,6 +14,7 @@
         <module>DependenceMapping</module>
         <module>Self_Join</module>
         <module>ManyToMany</module>
+        <module>Cache_Validation</module>
     </modules>
 
     <dependencies>

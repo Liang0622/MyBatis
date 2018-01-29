@@ -33,7 +33,7 @@ public class CountryTest {
         }
     }
 
-    //@Test
+    /*@Test
     public void testSelectCountryByCid(){
         Integer cid=1;
         Country country=null;
@@ -51,7 +51,7 @@ public class CountryTest {
         }
 
     }
-    @Test
+    @Test//延迟加载
     public void testSelectCountryByCid_delay(){
         Integer cid=1;
         Country country=null;
@@ -61,12 +61,12 @@ public class CountryTest {
             e.printStackTrace();
         }
         logger.debug("国家编号："+country.getcId()+"\t国家名称："+country.getcName());
-        logger.debug(country.getProvincials());
         HashSet<Provincial> provincials=(HashSet<Provincial>) country.getProvincials();
         Iterator<Provincial> provincialIterator=provincials.iterator();
         while(provincialIterator.hasNext()){
             Provincial provincial=provincialIterator.next();
             logger.debug("省会编号："+provincial.getpId()+"\t省会名称："+provincial.getpName());
         }
-    }
+    }*/
+
 }

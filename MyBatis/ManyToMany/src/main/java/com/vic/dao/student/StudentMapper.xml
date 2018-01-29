@@ -2,3 +2,19 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vic.dao.student.StudentMapper">
+    <!--根据学生编号，查询自身信息和所有老师的信息-->
+    <select id="selectTeachersBySid" resultMap="studentMap">
+        SELECT s.sid,t.id,sname,name FROM student s,teacher t,middle m
+        WHERE s.sid=m.sid AND t.id=m.tid AND s.sid=#{xxx}
+    </select>
+    <resultMap id="studentMap" type="Student">
+        <id property="sId" column="sid"/>
+        <result property="sName" column="sname"/>
+        <!--一个学生对应多个老师-->
+        <collection property="teachers" ofType="Teacher">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+        </collection>
+    </resultMap>
+</mapper>

@@ -6,4 +6,5 @@ import java.util.Set;
 
 public interface ProvincialMapper {
     Set<Provincial> selectProvincialByCid(Integer cid);
+    Provincial selectProvincialByPid(Integer pid);
 }

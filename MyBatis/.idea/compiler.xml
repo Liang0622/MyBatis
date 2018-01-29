@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Cache_Validation" />
         <module name="DependenceMapping" />
         <module name="FirstDemo" />
         <module name="ManyToMany" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Cache_Validation" target="1.5" />
       <module name="DependenceMapping" target="1.5" />
       <module name="FirstDemo" target="1.5" />
       <module name="ManyToMany" target="1.5" />

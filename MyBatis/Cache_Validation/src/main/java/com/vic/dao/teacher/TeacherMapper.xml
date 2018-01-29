@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace务必和接口的全类名一致 -->
+<mapper namespace="com.vic.dao.teacher.TeacherMapper">
+    <!--配置当前xml文件的2级缓存   下面的type使用一个即可
+    LoggingEhcache可以输出日志 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+    <!-- <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>-->
+
+    <!--根据教师编号查询    教师信息
+      01.局部关闭2级缓存   在对应的sql语句节点上 新增属性 useCache="false"
+      02.全局关闭2级缓存   在mybatis.xml文件中 新增
+         <setting name="cacheEnabled" value="false"/>-->
+    <select id="selectTeacherById"  resultType="Teacher" useCache="false">
+        select id,name,tid from teacher where id=#{xxx}
+    </select>
+
+    <!-- 验证增删改 对 二级缓存的影响  flushCache="false" 新增不刷新缓存-->
+    <insert id="addTeacher" flushCache="false" parameterType="Teacher">
+        insert into teacher values(#{id},#{tName},#{tId})
+    </insert>
+
+</mapper>

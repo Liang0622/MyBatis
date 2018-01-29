@@ -1,21 +1,20 @@
 package com.vic;
 
+import com.vic.dao.student.StudentMapper;
 import com.vic.dao.teacher.TeacherMapper;
 import com.vic.pojo.Student;
-import com.vic.pojo.Teacher;
 import com.vic.util.SessionFactory;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 
-public class TeacherTest {
+public class StudentTest {
     SqlSession session=null;
-    TeacherMapper mapper=null;
+    StudentMapper mapper=null;
     @Before
     public void getSession(){
         session= SessionFactory.getSession();
-        mapper=session.getMapper(TeacherMapper.class);
+        mapper=session.getMapper(StudentMapper.class);
     }
     @After
     public void sessionConmmitAndClose(){
@@ -24,10 +23,9 @@ public class TeacherTest {
             session.close();
         }
     }
-
     @org.junit.Test
-    public void selectStudentsByTid(){
-        Teacher t=mapper.selectStudentsByTid(1);
-        System.out.println(t.getStudents());
+    public void selectTeachersBySid(){
+        Student s=mapper.selectTeachersBySid(3);
+        System.out.println(s);
     }
 }

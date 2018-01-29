@@ -18,4 +18,16 @@
         WHERE countryid=#{xxx}
     </select>
 
+    <!--    关联关系，多对一    -->
+    <select id="selectProvincialByPid" resultMap="provincialResult_delay">
+        SELECT pid,pname ,countryid from provincial
+        where pid=#{xxx}
+    </select>
+    <resultMap id="provincialResult_delay" type="Provincial">
+        <id property="pId" column="pid"/>
+        <result property="pName" column="pname"/>
+        <association property="country" javaType="Country"
+                     select="com.vic.dao.CountryMapper.selectCountryByCid_delay" column="countryid"/>
+    </resultMap>
+
 </mapper>

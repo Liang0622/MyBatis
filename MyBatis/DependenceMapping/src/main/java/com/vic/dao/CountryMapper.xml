@@ -44,8 +44,9 @@
         <id property="cId" column="cid"/>
         <result property="cName" column="cname"/>
         <!--设置一个国家对应多个省会的属性-->
+        <!--如果延迟加载不在本xml中，加上相应xml中的namespace即可-->
         <collection property="provincials" ofType="Provincial"
-                    select="selectProvincialByCid" column="cid"/>
+                    select="com.vic.dao.ProvincialMapper.selectProvincialByCid" column="cid"/>
     </resultMap>
 
 

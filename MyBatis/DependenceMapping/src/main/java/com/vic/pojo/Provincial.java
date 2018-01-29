@@ -7,6 +7,16 @@ public class Provincial {
     private Integer pId;//省会编号
     private String pName;//省会名称
 
+    private Country country;
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
     public Integer getpId() {
         return pId;
     }

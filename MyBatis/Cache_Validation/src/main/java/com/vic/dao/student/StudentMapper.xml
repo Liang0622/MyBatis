@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vic.dao.student.StudentMapper">
+
+    <!--    一级缓存验证    -->
+    <select id="selectStudentBySid" resultMap="studentResult">
+        SELECT sid,sname,age FROM student
+        WHERE sid=#{xxx}
+    </select>
+    <resultMap id="studentResult" type="Student">
+        <id property="sId" column="sid"/>
+        <result property="sName" column="sname"/>
+        <result property="age" column="age"/>
+    </resultMap>
+<!--相同的sql语句,不同的id,同样会产生sql语句-->
+    <select id="selectStudentBySid2" resultMap="studentResult">
+        SELECT sid,sname,age FROM student
+        WHERE sid=#{xxx}
+    </select><select id="selectAllStudent" resultMap="studentResult">
+        SELECT sid,sname,age FROM student
+    </select>
+<!--增加记录-->
+   <insert id="addStudent" parameterType="Student">
+       INSERT INTO student(sid,sname,age) VALUES (#{sId},#{sName},#{age})
+   </insert>
+    <!--删除记录-->
+    <delete id="delStudent" parameterType="int">
+        DELETE FROM student WHERE sid=#{xxx}
+    </delete>
+    <!--修改记录-->
+    <update id="changeStudent" parameterType="Student">
+        UPDATE student
+        <set>
+            <if test="sName !=null and sName.trim()!=''">
+                sname=#{sName},
+            </if>
+            <if test="age !=null">
+                age=age,
+            </if>
+        </set>
+        WHERE sid=#{sId}
+    </update>
+
+</mapper>
